@@ -7,7 +7,7 @@ export const Navbar = () => {
   return (
     <s.HeaderContainer>
       <a href="">
-        <img src="public/img/file.png" alt="" />
+        <img src="/img/file.png" alt="" />
       </a>
       <s.LinksContainer>
         <s.HomeContainer home>
