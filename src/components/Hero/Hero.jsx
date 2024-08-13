@@ -11,7 +11,7 @@ export const Hero = () => {
         <Button radius = {"10"} disable = {false}>Ver mas</Button>
       </s.HeroTextContainerStyled>
       <s.HeroImageContainerStyled>
-        <img src="public/img/banner.jpg" alt="" />
+        <img src="img/banner.jpg" alt="" />
       </s.HeroImageContainerStyled>
     </s.HeroContainerStyled>
   );
