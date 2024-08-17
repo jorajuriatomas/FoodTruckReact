@@ -10,7 +10,7 @@ export const Contact = () => {
     <s.FormContact>
       <h2>Contactanos</h2>
       <input type="text" placeholder='Nombre' />
-      <input type="text" placeholder='Jorajuria' />
+      <input type="text" placeholder='Apellido' />
       <input type="text" placeholder='Correo' />
       <textarea name="" placeholder='Asunto' id=""></textarea>
       <s.ButtonContact whileTap = {{scale : 0.95}}>Enviar</s.ButtonContact>
