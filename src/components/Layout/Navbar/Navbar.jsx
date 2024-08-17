@@ -10,30 +10,30 @@ export const Navbar = () => {
 
   return (
     <s.HeaderContainer>
-      <NavLink to ="/">
+      <s.NavbarLink to ="/">
         <img src="/img/file.png" />
-      </NavLink>
+      </s.NavbarLink>
       <s.LinksContainer>
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <NavLink href="/">
+            <s.NavbarLink to ="/">
               <s.LinkContainer home>
                 <IoHomeSharp />
               </s.LinkContainer>
               Home
-            </NavLink>
+            </s.NavbarLink>
           </motion.div>
         </s.NavContainer>
 
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <NavLink to ="/contact">Contact</NavLink>
+            <s.NavbarLink to ="/contact">Contact</s.NavbarLink>
           </motion.div>
         </s.NavContainer>
 
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <NavLink to ="/products">Products</NavLink>
+            <s.NavbarLink to ="/products">Products</s.NavbarLink>
           </motion.div>
         </s.NavContainer>
 

@@ -45,8 +45,9 @@ export const UserContainer = styled(LinkContainer)`
   align-items: center;
 `;
 
-export const NavLink = styled(NavLink)`
-
+export const NavbarLink = styled(NavLink)`
+  text-decoration: none;
+  list-style: none;
 `;
 
 export const NavContainer = styled(LinkContainer)`
@@ -136,4 +137,11 @@ export const NavResponsiveList = styled.li`
   list-style-type: none;
 `;
 
-export const NavResponsiveLink = styled(NavLink)``;
+export const NavResponsiveLink = styled(NavLink)`
+  text-decoration: none;
+  color: white;
+
+  &:hover {
+    font-weight: bold;
+  }
+`;
