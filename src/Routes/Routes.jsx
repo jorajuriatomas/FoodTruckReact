@@ -10,8 +10,8 @@ const Routes = () => {
     <BrowserRouter>
     <ReactDomRoutes>
       <Route path="/" element={<Home /> } />
-      <Route path="products" element={<ProductsPage /> } />
-      <Route path="contact" element={<Contact /> } />
+      <Route path="/products" element={<ProductsPage /> } />
+      <Route path="/contact" element={<Contact /> } />
       <Route path="*" element={<h2>ERROR 404</h2> } />
     </ReactDomRoutes>
     </BrowserRouter>

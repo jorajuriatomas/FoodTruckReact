@@ -31,6 +31,12 @@ export const Navbar = () => {
           </motion.div>
         </s.NavContainer>
 
+        <s.NavContainer home>
+          <motion.div whileTap={{ scale: 0.95 }}>
+            <a href="/products">Products</a>
+          </motion.div>
+        </s.NavContainer>
+
         <s.UserNav>
           <s.UserContainer>
             <s.SpanStyled>Iniciar Sesión</s.SpanStyled>
