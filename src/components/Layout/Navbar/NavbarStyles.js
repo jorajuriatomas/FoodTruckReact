@@ -13,7 +13,7 @@ export const HeaderContainer = styled.header`
   }
 `;
 
-export const LinksContainer = styled.div`
+export const LinksContainer = styled.ul`
   color: white;
   display: flex;
   justify-content: center;
@@ -22,18 +22,19 @@ export const LinksContainer = styled.div`
 
   a {
     padding: 1rem 1.5rem;
-  }
-  a:first-child {
-    background: var(--blue-bg);
-    border-radius: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
+    color: white;
+  }
+  a:hover {
+    background: var(--blue-bg);
+    border-radius: 1rem;
   }
 `;
 
-export const LinkContainer = styled.div`
+export const LinkContainer = styled.li`
   font-size: 1.2rem;
   color: ${(props) => (props.home ? "#65baee" : "#374961")};
 `;
@@ -43,7 +44,7 @@ export const UserContainer = styled(LinkContainer)`
   align-items: center;
 `;
 
-export const HomeContainer = styled(LinkContainer)`
+export const NavContainer = styled(LinkContainer)`
   display: flex;
   align-items: center;
   @media (max-width: 960px) {
@@ -71,12 +72,61 @@ export const SpanStyled = styled.span`
 `;
 
 export const MenuContainer = styled(LinkContainer)`
-  font-size: 2rem;
   display: none;
-  color: #65baee;
+
+  button {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: #65baee;
+    cursor: pointer;
+  }
 
   @media (max-width: 960px) {
     display: flex;
+    justify-content: center;
     align-items: center;
+    cursor: pointer;
   }
-`
+`;
+
+export const NavResponsive = styled.nav`
+  width: 100%;
+  top: 132px;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  height: 0vh;
+  opacity: 0;
+  overflow: hidden;
+  transition: all 0.5s ease;
+  background-color: #18191a;
+  z-index: 100;
+
+  &.isActive {
+    height: 35vh;
+    opacity: 1;
+    ul {
+      display: flex;
+      flex-direction: column;
+      gap: 35px;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+    }
+  }
+`;
+
+export const NavResponsiveContainer = styled.ul`
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+`;
+
+export const NavResponsiveLink = styled.li`
+  list-style-type: none;
+`;

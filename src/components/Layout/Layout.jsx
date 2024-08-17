@@ -1,7 +1,7 @@
 import styled from "styled-components";
-import { Hero } from "../Hero/Hero";
-import { Categories } from "../Categories/Categories";
-
+import { Navbar } from "./Navbar/Navbar";
+import { Footer } from "./Footer/Footer";
+import { MenuContext } from "../../Hooks/MenuContext";
 
 const LayoutWrapper = styled.main`
   width: 100%;
@@ -11,13 +11,14 @@ const LayoutWrapper = styled.main`
   align-items: center;
 `;
 
-export const Layout = ( {children} ) => {
-  return(
-    <LayoutWrapper>
-     <Hero/> 
-     <Categories/>
-     {children}
-    </LayoutWrapper>
-    );
+export const Layout = ({ children }) => {
+  return (
+    <>
+      <MenuContext>
+      <Navbar />
+      </MenuContext>
+      <LayoutWrapper>{children}</LayoutWrapper>
+      <Footer />
+    </>
+  );
 };
-

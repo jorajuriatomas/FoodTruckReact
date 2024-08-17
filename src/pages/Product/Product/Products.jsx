@@ -1,5 +1,5 @@
 import * as s from "./ProductsStyles";
-import { products } from "../../data/Products";
+import { products } from "../../../data/Products";
 import { Product } from "./Product";
 
 export const Products = () => {

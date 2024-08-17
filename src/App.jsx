@@ -1,19 +1,10 @@
-import { Navbar } from "./components/Navbar/Navbar";
-import { Layout } from "./components/Layout/Layout";
-import { Products } from "./components/Products/Products";
-import { Footer } from "./components/Footer/Footer";
+import Routes from "./Routes/Routes";
+
 
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <Layout>
-        
-        <Products />
-      </Layout>
-      <Footer />
-    </>
+   <Routes />
   );
 }
 

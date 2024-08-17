@@ -1,5 +1,5 @@
 import * as s from "./ProductsStyles";
-import { Button } from "../UI/Button/Button";
+import { Button } from "../../../components/UI/Button/Button";
 
 export const Product = ({ img, title, price, category }) => {
   return (

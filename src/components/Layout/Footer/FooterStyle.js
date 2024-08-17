@@ -5,7 +5,8 @@ export const FooterContainer = styled.footer`
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 7rem 0 2rem 0;
+	padding: 2rem 0;
+	background-color: #18191a;
 	p span {
 		font-weight: 800;
 	}
@@ -25,3 +26,4 @@ export const LinksContainer = styled.div`
 		}
 	}
 `
+
