@@ -12,6 +12,9 @@ export const HeaderContainer = styled.header`
   img {
     height: 100px;
   }
+    @media (max-width: 960px) {
+    padding: 1rem 1rem;
+    }
 `;
 
 export const LinksContainer = styled.ul`

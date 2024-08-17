@@ -10,30 +10,30 @@ export const Navbar = () => {
 
   return (
     <s.HeaderContainer>
-      <s.NavbarLink to ="/">
+      <s.NavbarLink to="/">
         <img src="/img/file.png" />
       </s.NavbarLink>
       <s.LinksContainer>
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <s.NavbarLink to ="/">
+            <s.NavbarLink to="/">
               <s.LinkContainer home>
                 <IoHomeSharp />
               </s.LinkContainer>
-              Home
+              Inicio
             </s.NavbarLink>
           </motion.div>
         </s.NavContainer>
 
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <s.NavbarLink to ="/contact">Contact</s.NavbarLink>
+            <s.NavbarLink to="/contact">Contacto</s.NavbarLink>
           </motion.div>
         </s.NavContainer>
 
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <s.NavbarLink to ="/products">Products</s.NavbarLink>
+            <s.NavbarLink to="/products">Productos</s.NavbarLink>
           </motion.div>
         </s.NavContainer>
 
@@ -52,19 +52,21 @@ export const Navbar = () => {
         <s.NavResponsive className={`${isMenuOpen ? "isActive" : ""}`}>
           <s.NavResponsiveContainer>
             <s.NavResponsiveList>
-              <s.NavResponsiveLink to="/">Home</s.NavResponsiveLink>
+              <s.NavResponsiveLink to="/">Inicio</s.NavResponsiveLink>
             </s.NavResponsiveList>
 
             <s.NavResponsiveList>
-            <s.NavResponsiveLink to="/contact">Contact</s.NavResponsiveLink>
+              <s.NavResponsiveLink to="/contact">Contacto</s.NavResponsiveLink>
             </s.NavResponsiveList>
 
             <s.NavResponsiveList>
-            <s.NavResponsiveLink to="/products">Products</s.NavResponsiveLink>
+              <s.NavResponsiveLink to="/products">
+                Productos
+              </s.NavResponsiveLink>
             </s.NavResponsiveList>
 
             <s.NavResponsiveList>
-            <s.NavResponsiveLink to="/">Iniciar Sesion</s.NavResponsiveLink>
+              <s.NavResponsiveLink to="/">Iniciar Sesion</s.NavResponsiveLink>
             </s.NavResponsiveList>
           </s.NavResponsiveContainer>
         </s.NavResponsive>
