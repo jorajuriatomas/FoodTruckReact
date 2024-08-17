@@ -10,30 +10,30 @@ export const Navbar = () => {
 
   return (
     <s.HeaderContainer>
-      <a href="/">
-        <img src="/img/file.png"  />
-      </a>
+      <NavLink to ="/">
+        <img src="/img/file.png" />
+      </NavLink>
       <s.LinksContainer>
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <a href="/">
+            <NavLink href="/">
               <s.LinkContainer home>
                 <IoHomeSharp />
               </s.LinkContainer>
               Home
-            </a>
+            </NavLink>
           </motion.div>
         </s.NavContainer>
 
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <a href="/contact">Contact</a>
+            <NavLink to ="/contact">Contact</NavLink>
           </motion.div>
         </s.NavContainer>
 
         <s.NavContainer home>
           <motion.div whileTap={{ scale: 0.95 }}>
-            <a href="/products">Products</a>
+            <NavLink to ="/products">Products</NavLink>
           </motion.div>
         </s.NavContainer>
 
@@ -42,36 +42,33 @@ export const Navbar = () => {
             <s.SpanStyled>Iniciar Sesión</s.SpanStyled>
           </s.UserContainer>
         </s.UserNav>
-
       </s.LinksContainer>
-       
-          <s.MenuContainer>
-            <button onClick = {toggleMenu} >
-              <IoMenu />
-            </button>
 
-              <s.NavResponsive className={`${isMenuOpen ? "isActive": ""}`}>
-                <s.NavResponsiveContainer >
-                  <s.NavResponsiveLink>
-                    <a href="/">Home</a>
-                  </s.NavResponsiveLink>
-                
-                  <s.NavResponsiveLink>
-                    <a href="/contact">Contacto</a>
-                  </s.NavResponsiveLink>
-             
-                  <s.NavResponsiveLink>
-                    <a href="/products">Productos</a>
-                  </s.NavResponsiveLink>
-           
-                  <s.NavResponsiveLink>
-                    <a href="/">Iniciar Sesion </a>
-                  </s.NavResponsiveLink>
-                </s.NavResponsiveContainer>
-              </s.NavResponsive>
-            
-          </s.MenuContainer>
-     
+      <s.MenuContainer>
+        <button onClick={toggleMenu}>
+          <IoMenu />
+        </button>
+
+        <s.NavResponsive className={`${isMenuOpen ? "isActive" : ""}`}>
+          <s.NavResponsiveContainer>
+            <s.NavResponsiveList>
+              <s.NavResponsiveLink to="/">Home</s.NavResponsiveLink>
+            </s.NavResponsiveList>
+
+            <s.NavResponsiveList>
+            <s.NavResponsiveLink to="/contact">Contact</s.NavResponsiveLink>
+            </s.NavResponsiveList>
+
+            <s.NavResponsiveList>
+            <s.NavResponsiveLink to="/products">Products</s.NavResponsiveLink>
+            </s.NavResponsiveList>
+
+            <s.NavResponsiveList>
+            <s.NavResponsiveLink to="/">Iniciar Sesion</s.NavResponsiveLink>
+            </s.NavResponsiveList>
+          </s.NavResponsiveContainer>
+        </s.NavResponsive>
+      </s.MenuContainer>
     </s.HeaderContainer>
   );
 };

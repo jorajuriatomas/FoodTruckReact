@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
 export const HeaderContainer = styled.header`
@@ -42,6 +43,10 @@ export const LinkContainer = styled.li`
 export const UserContainer = styled(LinkContainer)`
   display: flex;
   align-items: center;
+`;
+
+export const NavLink = styled(NavLink)`
+
 `;
 
 export const NavContainer = styled(LinkContainer)`
@@ -127,6 +132,8 @@ export const NavResponsiveContainer = styled.ul`
   justify-content: center;
 `;
 
-export const NavResponsiveLink = styled.li`
+export const NavResponsiveList = styled.li`
   list-style-type: none;
 `;
+
+export const NavResponsiveLink = styled(NavLink)``;
